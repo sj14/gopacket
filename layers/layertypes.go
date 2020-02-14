@@ -146,6 +146,7 @@ var (
 	LayerTypeRMCP                         = gopacket.RegisterLayerType(142, gopacket.LayerTypeMetadata{Name: "RMCP", Decoder: gopacket.DecodeFunc(decodeRMCP)})
 	LayerTypeASF                          = gopacket.RegisterLayerType(143, gopacket.LayerTypeMetadata{Name: "ASF", Decoder: gopacket.DecodeFunc(decodeASF)})
 	LayerTypeASFPresencePong              = gopacket.RegisterLayerType(144, gopacket.LayerTypeMetadata{Name: "ASFPresencePong", Decoder: gopacket.DecodeFunc(decodeASFPresencePong)})
+	LayerTypeGTPv2C                       = gopacket.RegisterLayerType(145, gopacket.LayerTypeMetadata{Name: "GTPv2C", Decoder: gopacket.DecodeFunc(decodeGTPv2c)})
 )
 
 var (
